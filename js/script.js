@@ -102,5 +102,8 @@ function copyButton(){
     const copyBtn = d.querySelector('.text-container__copy-btn')
     copyBtn.onclick = function() {
         navigator.clipboard.writeText(output.innerHTML)
+        alert('Скопировано!')
     }
 }
+
+copyButton()
